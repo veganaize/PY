@@ -1,3 +1,5 @@
 * [Tkinter 8.5 reference](https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/index.html) - new mexico tech [[<img src="https://user-images.githubusercontent.com/37651007/51336414-c420cd00-1a84-11e9-9165-457cfa4cdcd1.png" width="16px" />](https://www-acc.gsi.de/wiki/pub/Frontend/DiverseAnleitungen/tkinter.pdf)]
-* [Learning Tkinter tutorial](https://riptutorial.com/Download/tkinter.pdf) - riptutorial <img src="https://user-images.githubusercontent.com/37651007/51336414-c420cd00-1a84-11e9-9165-457cfa4cdcd1.png" width="16px" />
 * [An Introduction to Tkinter](https://users.tricity.wsu.edu/~bobl/cpts481/an-introduction-to-tkinter.pdf) - fredrik lundh <img src="https://user-images.githubusercontent.com/37651007/51336414-c420cd00-1a84-11e9-9165-457cfa4cdcd1.png" width="16px" />
+* [Tkinter tutorial (oop)](https://zetcode.com/tkinter/) - zetcode
+* [Tkinter tutorial (procedural)](https://zetcode.com/python/tkinter/) - zetcode
+* [Learning Tkinter tutorial](https://riptutorial.com/Download/tkinter.pdf) - riptutorial <img src="https://user-images.githubusercontent.com/37651007/51336414-c420cd00-1a84-11e9-9165-457cfa4cdcd1.png" width="16px" />
