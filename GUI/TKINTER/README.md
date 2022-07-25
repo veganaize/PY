@@ -9,3 +9,4 @@
 * [Tkinter tutorial (oop)](https://zetcode.com/tkinter/) - zetcode
 * [Tkinter tutorial (procedural)](https://zetcode.com/python/tkinter/) - zetcode
 * [Learning Tkinter tutorial](https://riptutorial.com/Download/tkinter.pdf) - riptutorial <img src="https://user-images.githubusercontent.com/37651007/51336414-c420cd00-1a84-11e9-9165-457cfa4cdcd1.png" width="16px" />
+* [Graphical User Interfaces with Tk](https://docs.python.org/3/library/tk.html) - python.org
