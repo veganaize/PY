@@ -1,4 +1,5 @@
 * [All Python Tutorials](https://zetcode.com/all/#python) - zetcode
+* [Learn Python in 10 Minutes](https://www.stavros.io/tutorials/python/) - stavros
 * [Python 3 Documentation](https://docs.python.org/3/) _(w/ [offical tutorial](https://docs.python.org/3/tutorial/index.html))_ - python.org
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) - o'reilly
 
