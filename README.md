@@ -10,4 +10,9 @@
 
 ---
 
+* [Python Performance Tips](http://web.archive.org/web/20170615232316/https://gawron.sdsu.edu/compling/course_core/python_intro/intro_lecture_files/fastpython.html) - montanaro
+
+---
+
 * [cx_Freeze](https://pypi.org/project/cx-Freeze/) - create standalone executables from python scripts
+* [pyinstaller](https://pypi.org/project/pyinstaller/) - bundles application and all its dependencies into a single package
