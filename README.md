@@ -7,6 +7,7 @@
 
 * [Python Style Guide](https://google.github.io/styleguide/pyguide.html) - google
 * [The Zen of Python](https://peps.python.org/pep-0020/) - pep 20
+* [Style Guide for Python Code](https://peps.python.org/pep-0008/) - pep 8
 
 ---
 
