@@ -1,12 +1,15 @@
-Python
-======
+<img src="https://www.python.org/static/img/python-logo-large.png" width="32"
+/> [Python](https://docs.python.org/3/index.html)
+===========
 
 _A quick reference for Python 3 essentials_
 
 
-## Strings
+## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
-### String Methods
+## [Strings](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+
+### [String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
 * .capitalize()
 * .casefold()  # 3.3
