@@ -43,7 +43,7 @@ str.index(sub[, start[, end]])
 str.isalnum()
 str.isalpha()
 str.isascii()  # 3.7+
-str.isdecimal(
+str.isdecimal()
 str.isdigit()
 str.isidentifier()
 str.islower()
