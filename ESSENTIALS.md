@@ -7,6 +7,32 @@ _A quick reference for Python 3 essentials_
 
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
+### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
+```py
+list(d)
+len(d)
+d[key]
+d[key] = value
+del d[key]
+key in d
+key not in d
+iter(d)
+dict.clear()
+dict.copy()
+dict.fromkeys(iterable, value=None, /)  # static method
+dict.get(key, default=None, /)
+dict.items()
+dict.keys()
+dict.pop(key[, default])
+dict.popitem()
+reversed(d)  # shortcut for `reversed(d.keys())` 3.8+
+dict.setdefault(key, default=None, /)
+dict.update([other])
+dict.values()
+d | other
+d |= other
+```
+
 ### [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 ```python
 list.append(x)
