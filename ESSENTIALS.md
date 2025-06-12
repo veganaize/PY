@@ -50,7 +50,9 @@ list.sort(*, key=None, reverse=False)
 
 ### [List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
-## [Strings](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+## [Set](https://docs.python.org/3/library/stdtypes.html#set)
+
+## [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
 ### [String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
