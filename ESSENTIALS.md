@@ -24,13 +24,13 @@ dict.get(key, default=None, /)
 dict.items()
 dict.keys()
 dict.pop(key[, default])
-dict.popitem()
-reversed(d)  # shortcut for `reversed(d.keys())` 3.8+
+dict.popitem()  # LIFO order in 3.7+
+dict.reversed(d)  # returns reversed iterator over keys; same as `reversed(d.keys())`; 3.8+
 dict.setdefault(key, default=None, /)
-dict.update([other])
+dict.update(key_value_pairs)
 dict.values()
-d | other
-d |= other
+d | other  # 3.9+
+d |= other  # 3.9+
 ```
 
 ### [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
@@ -61,7 +61,7 @@ str.capitalize()
 str.casefold()  # 3.3+
 str.center(width[, fillchar])
 str.count(sub[, start[, end]])
-str.encode(encoding='utf-8', errors='strict')  # keyword args 3.1+
+str.encode(encoding='utf-8', errors='strict')  # keyword args in 3.1+
 str.endswith(suffix[, start[, end]])
 str.expandtabs(tabsize=4)
 str.find(sub[, start[, end]])
@@ -88,7 +88,7 @@ str.maketrans(x[, y[, z]])  # static method
 str.partition(sep)
 str.removeprefix(prefix, /)  # 3.9+
 str.removesuffix(suffix, /)  # 3.9+
-str.replace(old, new, count=-1)  # `count` as keyword arg 3.13+
+str.replace(old, new, count=-1)  # `count` as keyword arg in 3.13+
 str.rfind(sub[, start[, end]])
 str.rindex(sub[, start[, end]])
 str.rjust(width[, fillchar])
