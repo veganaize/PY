@@ -34,6 +34,8 @@ d | other  # 3.9+
 d |= other  # 3.9+
 ```
 
+### [Heap / Priority Queue](https://docs.python.org/3/library/heapq.html)
+
 ### [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 ```python
 list.append(x)
