@@ -4,6 +4,7 @@
 
 _A quick reference for Python 3 essentials_
 
+### [Operator Precedence](https://docs.python.org/3/reference/expressions.html#operator-summary)
 
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
