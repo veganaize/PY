@@ -11,7 +11,7 @@ _A quick reference for Python 3 essentials_
 ```py
 list(d)
 len(d)
-d[key]
+d[key]  # collections.Counter returns `0` for missing item instead of raising `KeyError`
 d[key] = value
 del d[key]
 key in d
