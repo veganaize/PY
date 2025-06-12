@@ -41,7 +41,7 @@ key not in d
 iter(d)
 dict.clear()
 dict.copy()
-dict.fromkeys(iterable, value=None, /)  # static method
+dict.fromkeys(iterable, value=None, /)  # class method
 dict.get(key, default=None, /)
 dict.items()
 dict.keys()
