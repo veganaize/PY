@@ -4,7 +4,26 @@
 
 _A quick reference for Python 3 essentials_
 
-### [Operator Precedence](https://docs.python.org/3/reference/expressions.html#operator-summary)
+| [OPERATOR PRECEDENCE](https://docs.python.org/3/reference/expressions.html#operator-summary) | |
+|----------------------------------------------------------------------------------------------|-|
+| (...), [...], {...} | bracketed expression / comprehension
+| x[], x[:], x(...), obj.x | subscript / slice / call / attribute
+| await
+| ** | exponential
+| +x, -x, ~x | positive / negative / bitwise not 
+| *, @, /, //, % | division / multiplication
+| +, - | addition / subtraction
+| <<, >> | shift
+| & | bitwise and
+| ^ | bitwise xor
+| \| | bitwise or
+| in, not in, is, is not, <, <=, >, >=, !=, == | membership / identity / comparison
+| not | boolean not
+| and | boolean and
+| or  | boolean or
+| if/else | conditional expression
+| lambda
+| := | assignment expression (walrus operator)
 
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
