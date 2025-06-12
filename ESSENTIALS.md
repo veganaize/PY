@@ -25,6 +25,8 @@ _A quick reference for Python 3 essentials_
 | lambda
 | := | assignment expression (walrus operator)
 
+## [Built-in Functions](https://docs.python.org/3/library/functions.html)
+
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
