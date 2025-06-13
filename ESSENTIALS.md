@@ -88,7 +88,7 @@ str.center(width[, fillchar])
 str.count(sub[, start[, end]])
 str.encode(encoding='utf-8', errors='strict')  # keyword args in 3.1+
 str.endswith(suffix[, start[, end]])
-str.expandtabs(tabsize=4)
+str.expandtabs(tabsize=8)
 str.find(sub[, start[, end]])
 str.format(*args, **kwargs)
 str.format_map(mapping, /)  # 3.2+
