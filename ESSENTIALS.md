@@ -6,24 +6,25 @@ _A quick reference for Python 3 essentials_
 
 | [OPERATOR PRECEDENCE](https://docs.python.org/3/reference/expressions.html#operator-summary) | |
 |----------------------------------------------------------------------------------------------|-|
-| (...), [...], {...} | bracketed expression / comprehension
-| x[], x[:], x(...), obj.x | subscript / slice / call / attribute
-| await
-| ** | exponential
-| +x, -x, ~x | positive / negative / bitwise not 
-| *, @, /, //, % | division / multiplication
-| +, - | addition / subtraction
-| <<, >> | shift
-| & | bitwise and
-| ^ | bitwise xor
-| \| | bitwise or
-| in, not in, is, is not, <, <=, >, >=, !=, == | membership / identity / comparison
-| not | boolean not
-| and | boolean and
-| or  | boolean or
-| if/else | conditional expression
-| lambda
-| := | assignment expression (walrus operator)
+| `(...)` `[...]` `{...}` | bracketed expression / comprehension
+| `x[]` `x[:]` `f(...)` `obj.x` | subscript / slice / call / attribute
+| [`await`](https://docs.python.org/3/library/asyncio.html)
+| `**` | exponential
+| `+x` `-x` `~x` | positive / negative / bitwise not 
+| `*` `@` `/` `//` `%` | division / multiplication
+| `+` `-` | addition / subtraction
+| `<<` `>>` | shift
+| `&` | bitwise and
+| `^` | bitwise xor
+| `\|` | bitwise or
+| `in` `not in` `is` `is not` `<` `<=` `>` `>=` `!=` `==` | membership / identity / comparison
+| `not` | boolean not
+| `and` | boolean and
+| `or`  | boolean or
+| `if`/`else` | conditional expression
+| `lambda [args]: <expression>`
+| `yield [expression]`
+| `:=` | assignment expression (walrus operator)
 
 ## [Built-in Functions](https://docs.python.org/3/library/functions.html)
 
