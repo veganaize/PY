@@ -31,6 +31,7 @@ _A quick reference for Python 3 essentials_
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 ```py
+# built-in dict class remembers insertion order in Python 3.7+
 list(d)
 len(d)
 d[key]  # collections.Counter returns `0` for missing item instead of raising `KeyError`
