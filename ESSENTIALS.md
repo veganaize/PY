@@ -28,6 +28,8 @@ _A quick reference for Python 3 essentials_
 
 ## [Built-in Functions](https://docs.python.org/3/library/functions.html)
 
+## [Collections](https://docs.python.org/3/library/collections.html)
+
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
