@@ -43,9 +43,9 @@ deque.copy()    # 3.5+
 deque.count(x)  # 3.2+
 deque.extend(iterable)
 deque.extendleft(iterable)
-deque[index]                     # O(1) at ends; O(n) worst case
-deque.index(x[, start[, stop]])  # O(1) at ends; O(n) worst case; 3.5+
-deque.insert(i, x)  # 3.5+
+deque.index(x[, start[, stop]])  # 3.5+
+deque[index]        # O(1) at ends; O(n) worst case
+deque.insert(i, x)  # O(1) at ends; O(n) worst case; 3.5+
 len(deque)
 deque.maxlen     # read-only; 3.1+
 deque.pop()      # O(1)
