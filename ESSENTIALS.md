@@ -30,6 +30,28 @@ _A quick reference for Python 3 essentials_
 
 ## [Collections](https://docs.python.org/3/library/collections.html)
 
+### [Deque](https://docs.python.org/3/library/collections.html#deque-objects)
+
+```python
+deque.append(x)  # O(1)
+deque.appendleft(x)  # O(1)
+deque.clear()
+deque.copy()  # 3.5+
+deque.count(x)  # 3.2+
+deque.extend(iterable)
+deque.extendleft(iterable)
+deque.index(x[, start[, stop]])  # O(1) at ends; O(n) worst case; 3.5+
+deque.insert(i, x)  # 3.5+
+deque.pop()  # O(1)
+deque.popleft()  # O(1)
+deque.remove(value)
+deque.reverse()  # 3.2+
+deque.rotate(n=1)
+deque.maxlen  # read-only; 3.1+
+len(deque)
+deque[index]  # O(1) at ends; O(n) worst case
+```
+
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
