@@ -33,6 +33,9 @@ _A quick reference for Python 3 essentials_
 ### [Deque](https://docs.python.org/3/library/collections.html#deque-objects)
 
 ```python
+import collections
+deque = collections.deque()
+
 deque.append(x)  # O(1)
 deque.appendleft(x)  # O(1)
 deque.clear()
@@ -47,9 +50,10 @@ deque.popleft()  # O(1)
 deque.remove(value)
 deque.reverse()  # 3.2+
 deque.rotate(n=1)
-deque.maxlen  # read-only; 3.1+
-len(deque)
+
 deque[index]  # O(1) at ends; O(n) worst case
+len(deque)
+deque.maxlen  # read-only; 3.1+
 ```
 
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
