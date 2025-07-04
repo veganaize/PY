@@ -36,24 +36,23 @@ _A quick reference for Python 3 essentials_
 import collections
 deque = collections.deque()
 
-deque.append(x)  # O(1)
+deque.append(x)      # O(1)
 deque.appendleft(x)  # O(1)
 deque.clear()
-deque.copy()  # 3.5+
+deque.copy()    # 3.5+
 deque.count(x)  # 3.2+
 deque.extend(iterable)
 deque.extendleft(iterable)
+deque[index]                     # O(1) at ends; O(n) worst case
 deque.index(x[, start[, stop]])  # O(1) at ends; O(n) worst case; 3.5+
 deque.insert(i, x)  # 3.5+
-deque.pop()  # O(1)
+len(deque)
+deque.maxlen     # read-only; 3.1+
+deque.pop()      # O(1)
 deque.popleft()  # O(1)
 deque.remove(value)
 deque.reverse()  # 3.2+
 deque.rotate(n=1)
-
-deque[index]  # O(1) at ends; O(n) worst case
-len(deque)
-deque.maxlen  # read-only; 3.1+
 ```
 
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
