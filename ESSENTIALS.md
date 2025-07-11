@@ -24,7 +24,7 @@ _A quick reference for Python 3 essentials_
 | `if`/`else` | conditional expression
 | `lambda [args]: <expression>`
 | `yield [expression]`
-| `:=` | assignment expression (walrus operator)
+| [`:=`](https://peps.python.org/pep-0572/) | assignment expression (walrus operator) v3.8+
 
 ## [Built-in Functions](https://docs.python.org/3/library/functions.html)
 
