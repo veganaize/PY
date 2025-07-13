@@ -58,11 +58,21 @@ deque.rotate(n=1)
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
+
+* `dict` (built-in)
+  - Optimal mapping
+  - Optimal updates
+  - Optimal space efficiency
+  - Remembers insertion order: [PyPy 2.5](https://doc.pypy.org/en/latest/release-2.5.0.html#highlights) & [CPython 3.6](https://docs.python.org/3.6/whatsnew/changelog.html#id135); all implementations 3.7+
+* `collections.OrderedDict`
+  - Optimal insertion-order tracking
+  - Optimal (frequent) reordering
+  - Equality operation includes checking order
+
 ```py
-# built-in dict class remembers insertion order in Python 3.7+
 list(d)
 len(d)
-d[key]  # collections.Counter returns `0` for missing item instead of raising `KeyError`
+d[key]  # `collections.Counter` returns `0` for missing items instead of raising `KeyError`
 d[key] = value
 del d[key]
 key in d
@@ -74,8 +84,10 @@ dict.fromkeys(iterable, value=None, /)  # class method
 dict.get(key, default=None, /)
 dict.items()
 dict.keys()
+collections.OrderedDict().move_to_end(key, last=True)  # to right end; `last=False` to beginning; raises `KeyError`
 dict.pop(key[, default])
 dict.popitem()  # LIFO order in 3.7+
+collections.OrderedDict().popitem(last=True)  # LIFO; `last=False` is FIFO
 dict.reversed(d)  # returns reversed iterator over keys; same as `reversed(d.keys())`; 3.8+
 dict.setdefault(key, default=None, /)
 dict.update(key_value_pairs)
