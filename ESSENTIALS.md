@@ -4,8 +4,9 @@
 
 _A quick reference for Python 3 essentials_
 
-| [OPERATOR PRECEDENCE](https://docs.python.org/3/reference/expressions.html#operator-summary) | |
-|----------------------------------------------------------------------------------------------|-|
+## [Expressions](https://docs.python.org/3/reference/expressions.html)
+| [OPERATOR PRECEDENCE](https://docs.python.org/3/reference/expressions.html#operator-summary) |   |
+|----------------------------------------------------------------------------------------------|---|
 | `(...)` `[...]` `{...}` | bracketed expression / comprehension
 | `x[]` `x[:]` `f(...)` `obj.x` | subscript / slice / call / attribute
 | [`await`](https://docs.python.org/3/library/asyncio.html)
@@ -17,12 +18,12 @@ _A quick reference for Python 3 essentials_
 | `&` | bitwise and
 | `^` | bitwise xor
 | `\|` | bitwise or
-| `in` `not in` `is` `is not` `<` `<=` `>` `>=` `!=` `==` | membership / identity / comparison
+| `in` `not in` `is` `is not` `<` `<=` `>` `>=` `!=` `==` | [membership](https://docs.python.org/3/reference/expressions.html#membership-test-operations) / [identity](https://docs.python.org/3/reference/expressions.html#is-not) / [comparison](https://docs.python.org/3/reference/expressions.html#comparisons)
 | `not` | boolean not
 | `and` | boolean and
 | `or`  | boolean or
-| `if`/`else` | conditional expression
-| `lambda [args]: <expression>`
+| `if`/`else` | [ternary conditional expression](https://docs.python.org/3/reference/expressions.html#conditional-expressions)
+| `lambda [args]: <expression>` | [anonymous function](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)
 | `yield [expression]`
 | [`:=`](https://peps.python.org/pep-0572/) | assignment expression (walrus operator) v3.8+
 
@@ -182,4 +183,21 @@ sys.stdin
 sys.stdout
 sys.stderr
 sys.stdlib_module_names
+```
+
+## [Performance Measurement](https://docs.python.org/3/tutorial/stdlib.html#performance-measurement)
+### [timeit](https://docs.python.org/3/library/timeit.html)
+```python
+import timeit
+
+timeit.repeat(
+        stmt='pass',
+        setup='pass',
+        timer=<default timer>,  # `time.perf_counter()` 3.3+
+        repeat=3,               # `repeat=5` 3.7+
+        number=1000000,
+        globals=None            # globals=globals(); 3.5+
+)
+
+
 ```
