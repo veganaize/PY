@@ -22,7 +22,7 @@ _A quick reference for Python 3 essentials_
 | `not` | boolean not
 | `and` | boolean and
 | `or`  | boolean or
-| `if`/`else` | [ternary conditional expression](https://docs.python.org/3/reference/expressions.html#conditional-expressions)
+| `... if ... else ...` | [ternary conditional expression](https://docs.python.org/3/reference/expressions.html#conditional-expressions)
 | `lambda [args]: <expression>` | [anonymous function](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)
 | `yield [expression]`
 | [`:=`](https://peps.python.org/pep-0572/) | assignment expression (walrus operator) v3.8+
