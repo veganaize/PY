@@ -190,14 +190,12 @@ sys.stdlib_module_names
 ```python
 import timeit
 
-timeit.repeat(
+min(timeit.repeat(
         stmt='pass',
-        setup='pass',
+        setup='pass',           # 'from __main__ import name1, name2'
         timer=<default timer>,  # `time.perf_counter()` 3.3+
         repeat=3,               # `repeat=5` 3.7+
         number=1000000,
         globals=None            # globals=globals(); 3.5+
-)
-
-
+))
 ```
