@@ -183,11 +183,14 @@ str.zfill(width)
 
 ## [Sys](https://docs.python.org/3/library/sys.html)
 ```python
+import sys
+
 sys.argv       # `arg[0]` is script name, empty string, or '-c'
 sys.byteorder  # 'big' or 'little' -endian
 sys.flags      # named tuple with command-line flags
-sys.getrecursionlimit()       # 1000
-sys.setrecursionlimit(limit)  # upper limit's platform dependent
+sys.getrecursionlimit()           # 1000
+sys.getsizeof(object[, default])  # byte size of object; raises `TypeError` if no size & missing `default`
+sys.setrecursionlimit(limit)      # upper limit is platform dependent
 sys.stdin
 sys.stdout
 sys.stderr
