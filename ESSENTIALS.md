@@ -98,6 +98,15 @@ d |= other  # 3.9+
 ```
 
 ### [Heap / Priority Queue](https://docs.python.org/3/library/heapq.html)
+```python
+from heapq import *
+
+heapify(list)  # Transform list in-place, into zero-based "min heap"; O(n) time
+heappop(heap)  # Pop & return smallest value
+heappush(heap, item)  # example: `heappush(heap, (1, 'some data'))`
+heappushpop(heap, item)  # Push item, then pop smallest; more efficient than `heappush(); heappop()`
+heapreplace(heap, item)  # Pop smallest, then push item; raises `IndexError` if empty
+```
 
 ### [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 ```python
