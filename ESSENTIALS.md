@@ -214,7 +214,7 @@ min(timeit.repeat(
 # Determine average overhead...
 repeat = 5
 sum(timeit.repeat(               # use `sum()` instead of `min()`
-        'for i in range(n): i',  # e.g. cost of loop & name evaluations
+        'for i in range(n): i',  # e.g. cost of range, loop & name evaluations
         'n=5',
         repeat=repeat
 )) / repeat                      # get average by dividing by `repeat` rate
