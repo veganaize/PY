@@ -210,4 +210,12 @@ min(timeit.repeat(
         number=1000000,
         globals=None            # globals=globals(); 3.5+
 ))
+
+# Determine average overhead
+repeat = 5
+sum(timeit.repeat(             # use `sum()` instead of `min()`
+        stmt='for i in j: i',  # e.g. cost of loop & name evaluation
+        setup='j=[1,2,3]',     # use literal, rather than `range()` for speed
+        repeat=repeat
+)) / repeat                    # get average by dividing by `repeat` rate
 ```
