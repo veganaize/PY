@@ -102,7 +102,7 @@ d |= other  # 3.9+
 from heapq import *
 
 heapify(list)  # Transform list in-place, into zero-based "min heap"; O(n) time
-heappop(heap)  # Pop & return smallest value
+heappop(heap)  # Pop & return smallest value; raises `IndexError` if empty
 heappush(heap, item)  # example: `heappush(heap, (1, 'some data'))`
 heappushpop(heap, item)  # Push item, then pop smallest; more efficient than `heappush(); heappop()`
 heapreplace(heap, item)  # Pop smallest, then push item; raises `IndexError` if empty
