@@ -32,7 +32,6 @@ _A quick reference for Python 3 essentials_
 ## [Collections](https://docs.python.org/3/library/collections.html)
 
 ### [Deque](https://docs.python.org/3/library/collections.html#deque-objects)
-
 ```python
 import collections
 deque = collections.deque()
@@ -59,7 +58,6 @@ deque.rotate(n=1)
 ## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
-
 * `dict` (built-in)
   - Optimal mapping
   - Optimal updates
@@ -69,7 +67,6 @@ deque.rotate(n=1)
   - Optimal insertion-order tracking
   - Optimal (frequent) reordering
   - Equality operation includes checking order
-
 ```py
 list(d)
 len(d)
@@ -125,12 +122,10 @@ list.sort(*, key=None, reverse=False)
 
 ### [List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
-## [Set](https://docs.python.org/3/library/stdtypes.html#set)
+### [Set](https://docs.python.org/3/library/stdtypes.html#set)
 
-## [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
-
-### [String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
-
+### [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+#### [String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 ```python
 str.capitalize()
 str.casefold()  # 3.3+
@@ -181,7 +176,28 @@ str.upper()
 str.zfill(width)
 ```
 
-## [Sys](https://docs.python.org/3/library/sys.html)
+## [Data Types](https://docs.python.org/3/library/datatypes.html)
+### [pprint](https://docs.python.org/3/library/pprint.html)
+```python
+import pprint
+
+pprint.pp(...)           # pretty prints an object (`sort_dicts=False` by default)
+pprint.pprint(...)       # pretty prints an object
+pprint.PrettyPrint(...)  # constructs object (same args as `pprint.pprint`)
+
+pprint.pprint(object,
+              stream=None,  # file-like object; `None` is `sys.stdout`
+              indent=1,     # nested indentation
+              width=80,     # max desired characters per line
+              depth=None,   # number of nesting levels; `None` is unconstrained
+              *,
+              compact=False,             # as many items as fit in `width` per line; 3.4+
+              sort_dicts=True,           # `False` is insertion order; 3.8+
+              underscore_numbers=False)  # format integers with a thousands separator `_`; 3.10+
+```
+
+## [Python Runtime Services](https://docs.python.org/3/library/python.html)
+### [Sys](https://docs.python.org/3/library/sys.html)
 ```python
 import sys
 
