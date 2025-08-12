@@ -177,6 +177,9 @@ str.zfill(width)
 ```
 
 ## [Data Types](https://docs.python.org/3/library/datatypes.html)
+
+### [array](https://docs.python.org/3/library/array.html)
+
 ### [pprint](https://docs.python.org/3/library/pprint.html)
 ```python
 import pprint
@@ -197,7 +200,7 @@ pprint.pprint(object,
 ```
 
 ## [Python Runtime Services](https://docs.python.org/3/library/python.html)
-### [Sys](https://docs.python.org/3/library/sys.html)
+### [sys](https://docs.python.org/3/library/sys.html)
 ```python
 import sys
 
