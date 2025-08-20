@@ -112,7 +112,7 @@ list.clear()
 list.copy()
 list.count(x)
 list.extend(iterable)
-list.insert(i, x)
+list.insert(i, x)  # insert before element `i`; `list.insert(0, x)` is front
 list.index(x[, start[, end]])
 list.pop([i])
 list.remove(x)
