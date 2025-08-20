@@ -117,7 +117,7 @@ list.index(x[, start[, end]])
 list.pop([i])
 list.remove(x)
 list.reverse()
-list.sort(*, key=None, reverse=False)
+list.sort(*, key=None, reverse=False)  # sort list in-place; use `sorted()` function for new list
 ```
 
 ### [List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
