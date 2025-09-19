@@ -4,7 +4,7 @@
 
 _A quick reference for Python 3 essentials_
 
-## [Expressions](https://docs.python.org/3/reference/expressions.html)
+## [💬 Expressions](https://docs.python.org/3/reference/expressions.html)
 | [OPERATOR PRECEDENCE](https://docs.python.org/3/reference/expressions.html#operator-summary) |   |
 |----------------------------------------------------------------------------------------------|---|
 | `(...)` `[...]` `{...}` | bracketed expression / comprehension
@@ -27,9 +27,9 @@ _A quick reference for Python 3 essentials_
 | `yield [expression]`
 | [`:=`](https://peps.python.org/pep-0572/) | assignment expression (walrus operator) v3.8+
 
-## [Built-in Functions](https://docs.python.org/3/library/functions.html)
+## [🛠️ Built-in Functions](https://docs.python.org/3/library/functions.html)
 
-## [Collections](https://docs.python.org/3/library/collections.html)
+## [📚 Collections](https://docs.python.org/3/library/collections.html)
 
 ### [Deque](https://docs.python.org/3/library/collections.html#deque-objects)
 ```python
@@ -55,7 +55,7 @@ deque.reverse()  # 3.2+
 deque.rotate(n=1)
 ```
 
-## [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+## [🛒 Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### [Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 * `dict` (built-in)
@@ -176,7 +176,7 @@ str.upper()
 str.zfill(width)
 ```
 
-## [Data Types](https://docs.python.org/3/library/datatypes.html)
+## [🏬 Data Types](https://docs.python.org/3/library/datatypes.html)
 
 ### [array](https://docs.python.org/3/library/array.html)
 
@@ -199,7 +199,7 @@ pprint.pprint(object,
               underscore_numbers=False)  # format integers with a thousands separator `_`; 3.10+
 ```
 
-## [Python Runtime Services](https://docs.python.org/3/library/python.html)
+## [⚙️ Python Runtime Services](https://docs.python.org/3/library/python.html)
 ### [sys](https://docs.python.org/3/library/sys.html)
 ```python
 import sys
@@ -216,7 +216,7 @@ sys.stderr
 sys.stdlib_module_names
 ```
 
-## [Performance Measurement](https://docs.python.org/3/tutorial/stdlib.html#performance-measurement)
+## [⏲️ Performance Measurement](https://docs.python.org/3/tutorial/stdlib.html#performance-measurement)
 ### [timeit](https://docs.python.org/3/library/timeit.html)
 ```python
 import timeit
