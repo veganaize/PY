@@ -4,6 +4,7 @@
 
 _A quick reference for Python 3 essentials_
 
+
 ## [💬 Expressions](https://docs.python.org/3/reference/expressions.html)
 | [OPERATOR PRECEDENCE](https://docs.python.org/3/reference/expressions.html#operator-summary) |   |
 |----------------------------------------------------------------------------------------------|---|
@@ -27,7 +28,19 @@ _A quick reference for Python 3 essentials_
 | `yield [expression]`
 | [`:=`](https://peps.python.org/pep-0572/) | assignment expression (walrus operator) v3.8+
 
+
 ## [🛠️ Built-in Functions](https://docs.python.org/3/library/functions.html)
+```python
+abs(number)     # absolute value
+all(iteratble)  # True if all truthy elements or empty
+any(iterator)   # True if any truthy element; False if empty
+ascii(object)   # printable representation; non-ascii characters escaped
+bin(integer[, 'b'])  # binary string; 'b' arg for no prefix
+bool(object)    # True unless __bool__() is False or __len__() is zero; no arg is False
+                # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
+...
+```
+
 
 ## [📚 Collections](https://docs.python.org/3/library/collections.html)
 
@@ -54,6 +67,7 @@ deque.remove(value)
 deque.reverse()  # 3.2+
 deque.rotate(n=1)
 ```
+
 
 ## [🛒 Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -125,6 +139,7 @@ list.sort(*, key=None, reverse=False)  # sort list in-place; use `sorted()` func
 ### [Set](https://docs.python.org/3/library/stdtypes.html#set)
 
 ### [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+
 #### [String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 ```python
 str.capitalize()
@@ -176,6 +191,7 @@ str.upper()
 str.zfill(width)
 ```
 
+
 ## [🏬 Data Types](https://docs.python.org/3/library/datatypes.html)
 
 ### [array](https://docs.python.org/3/library/array.html)
@@ -199,7 +215,9 @@ pprint.pprint(object,
               underscore_numbers=False)  # format integers with a thousands separator `_`; 3.10+
 ```
 
+
 ## [⚙️ Python Runtime Services](https://docs.python.org/3/library/python.html)
+
 ### [sys](https://docs.python.org/3/library/sys.html)
 ```python
 import sys
@@ -216,7 +234,9 @@ sys.stderr
 sys.stdlib_module_names
 ```
 
+
 ## [⏲️ Performance Measurement](https://docs.python.org/3/tutorial/stdlib.html#performance-measurement)
+
 ### [timeit](https://docs.python.org/3/library/timeit.html)
 ```python
 import timeit
