@@ -224,6 +224,7 @@ import sys
 
 sys.argv       # `arg[0]` is script name, empty string, or '-c'
 sys.byteorder  # 'big' or 'little' -endian
+sys.exit([status])  # `None` = `0`; `2` for command-line syntax; Any other object/string is `1` & prints to `sys.stderr`
 sys.flags      # named tuple with command-line flags
 sys.getrecursionlimit()           # 1000
 sys.getsizeof(object[, default])  # byte size of object; raises `TypeError` if no size & missing `default`
