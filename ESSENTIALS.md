@@ -108,6 +108,7 @@ d | other  # 3.9+
 d |= other  # 3.9+
 ```
 
+
 ### [Heap / Priority Queue](https://docs.python.org/3/library/heapq.html)
 ```python
 from heapq import *
@@ -119,77 +120,76 @@ heappushpop(heap, item)  # Push item, then pop smallest; more efficient than `he
 heapreplace(heap, item)  # Pop smallest, then push item; raises `IndexError` if empty
 ```
 
-### [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
-```python
-list.append(x)
-list.clear()
-list.copy()
-list.count(x)
-list.extend(iterable)
-list.insert(i, x)  # insert before element `i`; `list.insert(0, x)` is front
-list.index(x[, start[, end]])
-list.pop([i])
-list.remove(x)
-list.reverse()
-list.sort(*, key=None, reverse=False)  # sort list in-place; use `sorted()` function for new list
-```
-
-### [List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+### [List](https://docs.python.org/3/library/stdtypes.html#list)
+* [_Methods_](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+  ```python
+  list.append(x)
+  list.clear()
+  list.copy()
+  list.count(x)
+  list.extend(iterable)
+  list.insert(i, x)  # insert before element `i`; `list.insert(0, x)` is front
+  list.index(x[, start[, end]])
+  list.pop([i])
+  list.remove(x)
+  list.reverse()
+  list.sort(*, key=None, reverse=False)  # sort list in-place; use `sorted()` function for new list
+  ```
+* [_Comprehensions_](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
 ### [Set](https://docs.python.org/3/library/stdtypes.html#set)
 
 ### [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
-
-#### [String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
-```python
-str.capitalize()
-str.casefold()  # 3.3+
-str.center(width[, fillchar])
-str.count(sub[, start[, end]])
-str.encode(encoding='utf-8', errors='strict')  # keyword args in 3.1+
-str.endswith(suffix[, start[, end]])
-str.expandtabs(tabsize=8)
-str.find(sub[, start[, end]])
-str.format(*args, **kwargs)
-str.format_map(mapping, /)  # 3.2+
-str.index(sub[, start[, end]])
-str.isalnum()
-str.isalpha()
-str.isascii()  # 3.7+
-str.isdecimal()
-str.isdigit()
-str.isidentifier()
-str.islower()
-str.isnumeric()
-str.isprintable()
-str.isspace()
-str.istitle()
-str.isupper()
-str.join(iterable)
-str.ljust(width[, fillchar])
-str.lower()
-str.lstrip([chars])
-str.maketrans(x[, y[, z]])  # static method
-str.partition(sep)
-str.removeprefix(prefix, /)  # 3.9+
-str.removesuffix(suffix, /)  # 3.9+
-str.replace(old, new, count=-1)  # `count` as keyword arg in 3.13+
-str.rfind(sub[, start[, end]])
-str.rindex(sub[, start[, end]])
-str.rjust(width[, fillchar])
-str.rpartition(sep)
-str.rsplit(sep=None, maxsplit=-1)
-str.rstrip([chars])
-str.split(sep=None, maxsplit=-1)
-str.splitlines(keepends=False)
-str.startswith(prefix[, start[, end]])
-str.strip([chars])
-str.swapcase()
-str.title()
-str.translate(table)
-str.upper()
-str.zfill(width)
-```
+* [_Methods_](https://docs.python.org/3/library/stdtypes.html#string-methods)
+  ```python
+  str.capitalize()
+  str.casefold()  # 3.3+
+  str.center(width[, fillchar])
+  str.count(sub[, start[, end]])
+  str.encode(encoding='utf-8', errors='strict')  # keyword args in 3.1+
+  str.endswith(suffix[, start[, end]])
+  str.expandtabs(tabsize=8)
+  str.find(sub[, start[, end]])
+  str.format(*args, **kwargs)
+  str.format_map(mapping, /)  # 3.2+
+  str.index(sub[, start[, end]])
+  str.isalnum()
+  str.isalpha()
+  str.isascii()  # 3.7+
+  str.isdecimal()
+  str.isdigit()
+  str.isidentifier()
+  str.islower()
+  str.isnumeric()
+  str.isprintable()
+  str.isspace()
+  str.istitle()
+  str.isupper()
+  str.join(iterable)
+  str.ljust(width[, fillchar])
+  str.lower()
+  str.lstrip([chars])
+  str.maketrans(x[, y[, z]])  # static method
+  str.partition(sep)
+  str.removeprefix(prefix, /)  # 3.9+
+  str.removesuffix(suffix, /)  # 3.9+
+  str.replace(old, new, count=-1)  # `count` as keyword arg in 3.13+
+  str.rfind(sub[, start[, end]])
+  str.rindex(sub[, start[, end]])
+  str.rjust(width[, fillchar])
+  str.rpartition(sep)
+  str.rsplit(sep=None, maxsplit=-1)
+  str.rstrip([chars])
+  str.split(sep=None, maxsplit=-1)
+  str.splitlines(keepends=False)
+  str.startswith(prefix[, start[, end]])
+  str.strip([chars])
+  str.swapcase()
+  str.title()
+  str.translate(table)
+  str.upper()
+  str.zfill(width)
+  ```
 
 
 ## [🏬 Data Types](https://docs.python.org/3/library/datatypes.html)
