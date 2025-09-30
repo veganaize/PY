@@ -10,7 +10,7 @@ _A quick reference for Python 3 essentials_
 |----------------------------------------------------------------------------------------------|---|
 | `(...)` `[...]` `{...}` | bracketed expression / comprehension
 | `x[]` `x[:]` `f(...)` `obj.x` | subscript / slice / call / attribute
-| [`await`](https://docs.python.org/3/library/asyncio.html)
+| [`await`](https://docs.python.org/3/library/asyncio.html) | v3.7+
 | `**` | exponential
 | `+x` `-x` `~x` | positive / negative / bitwise not 
 | `*` `@` `/` `//` `%` | division / multiplication
