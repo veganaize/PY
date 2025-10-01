@@ -122,6 +122,13 @@ merge(*iterables, key=None, reverse=False)  # returns iterator over presorted, a
 # Following functions best for 1 < n < large; If n==1 use `max()` or `min()`; If n is large use `sorted()`...
 nlargest(n, iterable, key=None)   # returns n largest elements list; like `sorted(iterable, key=None, reverse=True)[:n]`
 nsmallest(n, iterable, key=None)  # returns n smallest elements list; like `sorted(iterable, key=None)[:n]`
+
+def heapsort(iterable):
+    heap = []
+    for item in iterable:
+        heappush(heap, item)
+
+    return [heappop(heap) for _ in range(len(heap))]
 ```
 
 ### [List](https://docs.python.org/3/library/stdtypes.html#list)
