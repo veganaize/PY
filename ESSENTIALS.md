@@ -125,9 +125,7 @@ nsmallest(n, iterable, key=None)  # returns n smallest elements list; like `sort
 
 def heapsort(iterable):
     heap = []
-    for item in iterable:
-        heappush(heap, item)
-
+    for item in iterable: heappush(heap, item)
     return [heappop(heap) for _ in range(len(heap))]
 ```
 
