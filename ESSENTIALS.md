@@ -115,9 +115,13 @@ from heapq import *
 
 heapify(list)  # Transform list in-place, into zero-based "min heap"; O(n) time
 heappop(heap)  # Pop & return smallest value; raises `IndexError` if empty
-heappush(heap, item)  # example: `heappush(heap, (1, 'some data'))`
+heappush(heap, item)     # example: `heappush(heap, (1, 'some data'))`
 heappushpop(heap, item)  # Push item, then pop smallest; more efficient than `heappush(); heappop()`
 heapreplace(heap, item)  # Pop smallest, then push item; raises `IndexError` if empty
+merge(*iterables, key=None, reverse=False)  # returns iterator over presorted, ascending inputs as single sorted output; kwargs 3.5+
+# Following functions best for 1 < n < large; If n==1 use `max()` or `min()`; If n is large use `sorted()`...
+nlargest(n, iterable, key=None)   # returns n largest elements list; like `sorted(iterable, key=None, reverse=True)[:n]`
+nsmallest(n, iterable, key=None)  # returns n smallest elements list; like `sorted(iterable, key=None)[:n]`
 ```
 
 ### [List](https://docs.python.org/3/library/stdtypes.html#list)
