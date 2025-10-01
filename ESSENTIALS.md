@@ -123,10 +123,21 @@ merge(*iterables, key=None, reverse=False)  # returns iterator over presorted, a
 nlargest(n, iterable, key=None)   # returns n largest elements list; like `sorted(iterable, key=None, reverse=True)[:n]`
 nsmallest(n, iterable, key=None)  # returns n smallest elements list; like `sorted(iterable, key=None)[:n]`
 
+### Time: O(n log n); Space: O(n)
 def heapsort(iterable):
     heap = []
     for item in iterable: heappush(heap, item)
     return [heappop(heap) for _ in range(len(heap))]
+
+### Time: O(n log n); Space: O(1)
+def heapsort(sequence):
+    heap = []
+    for _ in range(len(sequence)):
+        item = sequence.pop()
+        heappush(heap, item)
+    for _ in range(len(heap)):
+        sequence.append(heappop(heap))
+    return sequence
 ```
 
 ### [List](https://docs.python.org/3/library/stdtypes.html#list)
