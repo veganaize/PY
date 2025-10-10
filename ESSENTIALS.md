@@ -220,7 +220,7 @@ def heapsort(sequence):
 ```python
 import pprint
 
-pprint.pp(...)           # pretty prints an object (`sort_dicts=False` by default)
+pprint.pp(...)           # pretty prints an object (`sort_dicts=False` by default); 3.8+
 pprint.pprint(...)       # pretty prints an object
 pprint.PrettyPrint(...)  # constructs object (same args as `pprint.pprint`)
 
