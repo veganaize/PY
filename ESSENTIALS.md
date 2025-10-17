@@ -236,6 +236,16 @@ pprint.pprint(object,
 ```
 
 
+## [🪆 Functional Programming](https://docs.python.org/3/howto/functional.html)
+
+* [Generator Expressions & List Comprehensions](https://docs.python.org/3/howto/functional.html#generator-expressions-and-list-comprehensions)
+  ```py
+  sum(i*i for i in range(10))  # argument evaluates to iterator; wrap in `()` if other args or outside of call
+  ```
+  - [PEP 289 – Generator Expressions](https://peps.python.org/pep-0289/)
+* [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
+  - [`itertools`](https://docs.python.org/3/library/itertools.html)
+
 ## [⚙️ Python Runtime Services](https://docs.python.org/3/library/python.html)
 
 ### [sys](https://docs.python.org/3/library/sys.html)
