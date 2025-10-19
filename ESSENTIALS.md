@@ -158,6 +158,48 @@ def heapsort(sequence):
 * [_Comprehensions_](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
 ### [Set](https://docs.python.org/3/library/stdtypes.html#set)
+```py
+set([interable])
+frozenset([iterable])
+s = { 'one', 'two' }
+s = { ch for ch in 'abc' }
+
+len(s)
+x [not] in s
+
+.isdisjoint(other)  # True if no common elements; disjoint if intersection is empty set
+.issubset(other)
+set <= other        # True if every element is in other
+set < other         # True if set <= other and set != other; a proper subset
+.issuperset(other)
+set >= other        # True if every element in other is set
+set > other         # True if set >= other and set != other; a proper superset
+.union(*others)
+set | other | ...   # Return new set with elements from set and others
+.intersection(*others)
+set & other & ...   # Return new set with elements common to set and others
+.difference(*others)
+set - other - ...   # Return new set with elements in set that aren't in others
+.symmetric_difference(other)
+set ^ other         # Return new set with elements in either set or other but not both
+.copy()             # Return shallow copy
+
+### Mutation Operations ###
+.update(*others)
+set |= other | ...    # Update set, adding elements from others
+.intersection_update(*others)
+set &= other & ...    # Update set, keeping elements found in it and others
+.difference_update(*others)
+set -= other | ...    # Update set, removing elements found in others
+.symmetric_difference_update(other, /)
+set ^= other       # Update set, keeping elements found in either set, but not both
+.add(element)      # Add element to set
+.remove(element)   # Remove element from set; Raises KeyError if element isn't in set
+.discard(element)  # Remove element from set if present
+.pop()    # Remove and return arbitrary element from set; Raises KeyError if set is empty
+.clear()  # Remove all elements from set
+
+```
 
 ### [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 * [_Methods_](https://docs.python.org/3/library/stdtypes.html#string-methods)
