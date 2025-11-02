@@ -157,6 +157,11 @@ def heapsort(sequence):
   ```
 * [_Comprehensions_](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
+### [Memory View](https://docs.python.org/3/library/stdtypes.html#memory-views)
+```py
+view = memoryview(obj)  # returns view over buffer protocol objects: bytes, bytearray, array.array (without copying)
+```
+
 ### [Set](https://docs.python.org/3/library/stdtypes.html#set)
 ```py
 set([interable])
