@@ -31,13 +31,16 @@ _A quick reference for Python 3 essentials_
 
 ## [🛠️ Built-in Functions](https://docs.python.org/3/library/functions.html)
 ```python
-abs(number)     # absolute value
-all(iteratble)  # True if all truthy elements or empty
-any(iterator)   # True if any truthy element; False if empty
-ascii(object)   # printable representation; non-ascii characters escaped
+abs(number)          # absolute value
+all(iteratble)       # True if all truthy elements or empty
+any(iterator)        # True if any truthy element; False if empty
+ascii(object)        # printable representation; non-ascii characters escaped
 bin(integer[, 'b'])  # binary string; 'b' arg for no prefix
-bool(object)    # True unless __bool__() is False or __len__() is zero; no arg is False
-                # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
+bool(object)         # True unless __bool__() is False or __len__() is zero; no arg is False
+                     # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
+...
+enumerate(iterable[, start=0])  # returns enumerate object, which itself
+                                # returns tuples w/ count (from `start`) & value (not from `start`) each iteration
 ...
 ```
 
@@ -52,19 +55,19 @@ deque = collections.deque()
 deque.append(x)      # O(1)
 deque.appendleft(x)  # O(1)
 deque.clear()
-deque.copy()    # 3.5+
-deque.count(x)  # 3.2+
+deque.copy()         # 3.5+
+deque.count(x)       # 3.2+
 deque.extend(iterable)
 deque.extendleft(iterable)
 deque.index(x[, start[, stop]])  # 3.5+
 deque[index]        # O(1) at ends; O(n) worst case
 deque.insert(i, x)  # O(1) at ends; O(n) worst case; 3.5+
 len(deque)
-deque.maxlen     # read-only; 3.1+
-deque.pop()      # O(1)
-deque.popleft()  # O(1)
+deque.maxlen        # read-only; 3.1+
+deque.pop()         # O(1)
+deque.popleft()     # O(1)
 deque.remove(value)
-deque.reverse()  # 3.2+
+deque.reverse()     # 3.2+
 deque.rotate(n=1)
 ```
 
@@ -98,13 +101,13 @@ dict.items()
 dict.keys()
 collections.OrderedDict().move_to_end(key, last=True)  # to right end; `last=False` to beginning; raises `KeyError`
 dict.pop(key[, default])
-dict.popitem()  # LIFO order in 3.7+
+dict.popitem()    # LIFO order in 3.7+
 collections.OrderedDict().popitem(last=True)  # LIFO; `last=False` is FIFO
 dict.reversed(d)  # returns reversed iterator over keys; same as `reversed(d.keys())`; 3.8+
 dict.setdefault(key, default=None, /)
 dict.update(key_value_pairs)
 dict.values()
-d | other  # 3.9+
+d | other   # 3.9+
 d |= other  # 3.9+
 ```
 
@@ -236,10 +239,10 @@ set ^= other       # Update set, keeping elements found in either set, but not b
   str.ljust(width[, fillchar])
   str.lower()
   str.lstrip([chars])
-  str.maketrans(x[, y[, z]])  # static method
+  str.maketrans(x[, y[, z]])       # static method
   str.partition(sep)
-  str.removeprefix(prefix, /)  # 3.9+
-  str.removesuffix(suffix, /)  # 3.9+
+  str.removeprefix(prefix, /)      # 3.9+
+  str.removesuffix(suffix, /)      # 3.9+
   str.replace(old, new, count=-1)  # `count` as keyword arg in 3.13+
   str.rfind(sub[, start[, end]])
   str.rindex(sub[, start[, end]])
@@ -299,10 +302,10 @@ pprint.pprint(object,
 ```python
 import sys
 
-sys.argv       # `arg[0]` is script name, empty string, or '-c'
-sys.byteorder  # 'big' or 'little' -endian
+sys.argv            # `arg[0]` is script name, empty string, or '-c'
+sys.byteorder       # 'big' or 'little' -endian
 sys.exit([status])  # `None` = `0`; `2` for command-line syntax; Any other object/string is `1` & prints to `sys.stderr`
-sys.flags      # named tuple with command-line flags
+sys.flags           # named tuple with command-line flags
 sys.getrecursionlimit()           # 1000
 sys.getsizeof(object[, default])  # byte size of object; raises `TypeError` if no size & missing `default`
 sys.setrecursionlimit(limit)      # upper limit is platform dependent
