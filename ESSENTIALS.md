@@ -39,7 +39,7 @@ bin(integer[, 'b'])  # binary string; 'b' arg for no prefix
 bool(object)         # True unless __bool__() is False or __len__() is zero; no arg is False
                      # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
 ...
-enumerate(iterable[, start=0])  # returns enumerate object, which itself
+enumerate(iterable[, start=0])  # returns iterable enumerate object, which itself
                                 # returns tuples w/ count (from `start`) & value (not from `start`) each iteration
 ...
 ```
