@@ -40,7 +40,7 @@ bool(object)         # True unless __bool__() is False or __len__() is zero; no 
                      # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
 ...
 enumerate(iterable[, start=0])  # returns iterable enumerate object, which itself
-                                # returns tuples w/ count (from `start`) & value (not from `start`) each iteration
+                                # returns tuples w/ count (from `start`) & value (from beginning) each iteration
 ...
 ```
 
